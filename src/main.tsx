@@ -13,9 +13,10 @@ import { Memorize } from "./memos/Memorize";
 import { MemoHook } from "./memos/MemoHook";
 import { CallbackHook } from "./memos/CallbackHook"; */
 import { Padre } from "./memoTwo/Padre";
+import { TodoApp } from "./useReducer/TodoApp";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   //<React.StrictMode>
-  <Padre />
+  <TodoApp />
   //</React.StrictMode>
 );
