@@ -1,6 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
+import { BrowserRouter } from "react-router-dom";
 import "./index.css";
+
 /* import { HooksApp } from "./HooksApp";
 import { CounterApp } from "./useState/CounterApp";
 import { CounterWithCustomHook } from "./useState/CounterWithCustomHook";
@@ -11,12 +13,15 @@ import { FocusScreen } from "./useRef/FocusScreen";
 import { Layout } from "./useLayoutEffect/Layout";
 import { Memorize } from "./memos/Memorize";
 import { MemoHook } from "./memos/MemoHook";
-import { CallbackHook } from "./memos/CallbackHook"; */
+import { CallbackHook } from "./memos/CallbackHook";
 import { Padre } from "./memoTwo/Padre";
-import { TodoApp } from "./useReducer/TodoApp";
+import { TodoApp } from "./useReducer/TodoApp"; */
+import { MainApp } from "./useContext/MainApp";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  //<React.StrictMode>
-  <TodoApp />
-  //</React.StrictMode>
+  <BrowserRouter>
+    {/* <React.StrictMode> */}
+    <MainApp />
+    {/* </React.StrictMode> */}
+  </BrowserRouter>
 );
